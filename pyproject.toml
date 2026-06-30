@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zipstripper-lite"
+version = "1.4.0"
+description = "Create clean, dependency-stripped project ZIPs without modifying the original project."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Vincent J. Kessler" }]
+keywords = ["zip", "developer-tools", "ai", "project-handoff", "windows"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent"
+]
+
+[project.scripts]
+zipstripper-lite = "zip_stripper_lite:main"
+
+[tool.setuptools]
+py-modules = ["zip_stripper_lite"]
